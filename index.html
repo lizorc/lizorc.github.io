@@ -1,32 +1,485 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portafolio</title>
         <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" href="img/Logo.png" />
-
-        <title>Proximamente...</title>
-    
+        <link rel="shortcut icon" href="img/Logo_C.png" />
     </head>
 
     <body>
         <div>
-           
-            <h1 id="greeting">¡Bienvenido!</h1>
-            <p id="description">Este sitio esta en construcción.</p>
-
-            <img src="img/Tuercas.gif">
-
-            <div>
-                <button class="lang-btn" onclick="changeLanguage('es')">ESP</button>
-                <button class="lang-btn" onclick="changeLanguage('en')">ENG</button>
+            <!-- HEADER -->
+            <div class="contenedor-header">
+                <header>
+                    <div class="logo">
+                        <a href="#"><img src="img/Logo_C.png" alt="Logo"></a>
+                    </div>
+                    <nav id="nav">
+                        <ul>
+                            <li><a href="#" id="home">Home</a></li>
+                            <li><a href="#about_me" id="aboutme">About Me</a></li>
+                            <li><a href="#skill" id="skills">SKILLS</a></li>
+                            <li><a href="#cv">CV</a></li>
+                            <li><a href="#certification" id="certifications">CERTIFICATIONS</a></li>
+                            <li><button class="lang-btn" onclick="changeLanguage('en')">ENG</button></li>
+                            <li><button class="lang-btn" onclick="changeLanguage('es')">ESP</button></li>
+                        </ul>
+                    </nav>
+                </header>
             </div>
 
-            <script src="controller/language.js"></script>
+            <!--SECCIÓN HOME-->
+            <section id="home" class="home">
+                <div class="contenido-banner">
+                    <div class="contenedor-img">
+                        <img src="img/Foto.jpg" alt="Foto_Personal">
+                    </div>
+                    <h1>LIZ ORIANA RODRIGUES CRUZ</h1>
+                    <h2 id= "role1"></h2>
+                    <h2 id= "role2"></h2>
+                    <div class="redes">
+                        <a id="gmail" href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-gmail"><img src="img/gmail.png" alt="Gmail"></i></a>
+                        <a id="linkedin" href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"><img src="img/linkedin.png" alt="Linkedin"></i></a>
+                        <a id="github" href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"><img src="img/github.png" alt="Github"></i></a>
+                    </div>
+                </div>
+                
+            </section>  
+            
+            <div class = "background">
+                <!--SECCIÓN ABOUT ME-->
+                <section id="about_me" class="aboutme">
+                    <div class="contenido-seccion">
+                        <h2 id= "aboutme1">About me</h2>
+                        <p id = "name">Hola, soy Liz Rodrigues.</p>
+                        <p id="presentation">
+                            Soy portuguesa y venezolana de 23 años que actualmente vive en Colombia. 
+                            Estoy entusiasmada con la oportunidad de establecerme en un nuevo país y abrazar 
+                            nuevos retos profesionales. Con pasión por asumir nuevos roles y contribuir con 
+                            mis habilidades y experiencia. Estoy deseando aportar lo mejor de mí a un entorno 
+                            dinámico y crecer en este nuevo capítulo de mi vida.
+                        </p>
+
+                        <!--intereses-->
+                        <div class="fila">
+                            <!--Idiomas--> 
+                            <div class="col1">
+                                <div class = "col">
+                                    <h3 id="language">Idiomas</h3>
+                                    <ul>
+                                        <li><strong id="spanish">Spanish</strong><span id="native">(Native)</span></li>
+                                        <li><strong id="english">English</strong><span id="intermediate">(Intermediate)</span></li>
+                                        <li><strong id="portuguese">Portuguese</strong><span id="basic">(Basic)</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!--Hobbies-->
+                            <div class="col2">
+                                <div class = "col">
+                                    <h3>Hobbies</h3>
+                                    <div class="contenedor-intereses">
+                                        <div class="interes">
+                                            <img src="img/Podcast.png" alt="Podcast">
+                                            <span>PODCAST</span>
+                                        </div>
+                                        <div class="interes">
+                                            <img src="img/Handcrafts.png" alt="Handcrafts">
+                                            <span id="handcrafts">HANDCRAFTS</span>
+                                        </div>
+                                        <div class="interes">
+                                            <img src="img/Paint.png" alt="Paint">
+                                            <span id="paint">PAINT</span>
+                                        </div>
+                                        <div class="interes">
+                                            <img src="img/Travel.png" alt="Travel">
+                                            <span id="travel">TRAVEL</span>
+                                        </div>
+                                        <div class="interes">
+                                            <img src="img/Dance.png" alt="Dance">
+                                            <span id="dance">DANCE</span>
+                                        </div>
+                                        <div class="interes">
+                                            <img src="img/Animals.png" alt="Animals">
+                                            <span id="animals">ANIMALS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> 
+
+                <!--SECCIÓN SKILLS-->
+                <section id="skill" class="skills">
+                    <div class="contenido-seccion">
+                        <h2 id="skills1">SKILLS</h2>
+                        <div class="fila">
+                            <!-- Technical Skills -->
+                            <div class="col">
+                                <h3 id="technical">Technical</h3>
+                                <div class="skill">
+                                    <span>SAP</span>
+                                    <div class="barra-skills">
+                                        <div class="progreso sap" style="width: 30%;">
+                                            <span>30%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span>Canva</span>
+                                    <div class="barra-skills">
+                                        <div class="progreso canva" style="width: 80%;">
+                                            <span>80%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span>SCRUM</span>
+                                    <div class="barra-skills">
+                                        <div class="progreso scrum" style="width: 50%;">
+                                            <span>50%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span>Python</span>
+                                    <div class="barra-skills">
+                                        <div class="progreso python" style="width: 60%;">
+                                            <span>60%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span>Database</span>
+                                    <div class="barra-skills">
+                                        <div class="progreso sql" style="width: 50%;">
+                                            <span>50%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span>WordPress</span>
+                                    <div class="barra-skills">
+                                        <div class="progreso wordpress" style="width: 40%;">
+                                            <span>40%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span>JavaScript</span>
+                                    <div class="barra-skills">
+                                        <div class="progreso javascript" style="width: 50%;">
+                                            <span>50%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span>GIT & Github</span>
+                                    <div class="barra-skills">
+                                        <div class="progreso git" style="width: 60%;">
+                                            <span>60%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span>HTML & CSS</span>
+                                    <div class="barra-skills">
+                                        <div class="progreso html" style="width: 90%;">
+                                            <span>90%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span>Microsoft Office</span>
+                                    <div class="barra-skills">
+                                        <div class="progreso microsoftoffice" style="width: 90%;">
+                                            <span>90%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span>Google Analytics</span>
+                                    <div class="barra-skills">
+                                        <div class="progreso google" style="width: 30%;">
+                                            <span>30%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Professional Skills -->
+                            <div class="col">
+                                <h3 id="professional">Professional</h3>
+                                <div class="skill">
+                                    <span id="organized">Organizada</span>
+                                    <div class="barra-skills">
+                                        <div class="progreso organized" style="width: 90%;">
+                                            <span>90%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span id="creativity">Creativity</span>
+                                    <div class="barra-skills">
+                                        <div class="progreso creativity" style="width: 80%;">
+                                            <span>80%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span id="adaptability">Adaptability</span>
+                                    <div class="barra-skills">
+                                        <div class="progreso adaptability" style="width: 80%;">
+                                            <span>80%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span id="teamwork">Teamwork</span>
+                                    <div class="barra-skills">
+                                        <div class="progreso teamwork" style="width: 90%;">
+                                            <span>90%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span id="communication">Communication</span>
+                                    <div class="barra-skills">
+                                        <div class="progreso communication" style="width: 70%;">
+                                            <span>70%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span id="decision">Decision making</span>
+                                    <div class="barra-skills">
+                                        <div class="progreso decision" style="width: 70%;">
+                                            <span>70%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span id="detail">Attention to detail</span>
+                                    <div class="barra-skills">
+                                        <div class="progreso detail" style="width: 80%;">
+                                            <span>80%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span id="timemanag">Time managemen</span>
+                                    <div class="barra-skills">
+                                        <div class="progreso timemanag" style="width: 80%;">
+                                            <span>80%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span id="trouble">Troubleshooting</span>
+                                    <div class="barra-skills">
+                                        <div class="progreso trouble" style="width: 70%;">
+                                            <span>70%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span id="projectmanag">Project management</span>
+                                    <div class="barra-skills">
+                                        <div class="progreso projectmanag" style="width: 80%;">
+                                            <span>80%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span id="projectplan">Project planning</span>
+                                    <div class="barra-skills">
+                                        <div class="progreso projectplan" style="width: 90%;">
+                                            <span>90%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> 
+       
+                <!--SECCIÓN RESUME-->
+                <section id="cv" class="cv">
+                    <div class="contenido-seccion">
+                        <h2>CV</h2>
+                        <!-- Sección de Educación -->
+                        <div class="fila">
+                            <div class="col izquierda">
+                                <h3 id="education">Education</h3>
+                                <div class="item izq">
+                                    <h4 id="cs">Computer Science</h4>
+                                    <span id="focus">emphasized in Project Management</span>
+                                    <span class="casa" id="eafit1">EAFIT University</span>
+                                    <span class="fecha">01/2019 - 12/2023</span>
+                                    <p id="descrip_cs">My academic background has provided me with a solid understanding of 
+                                        technological systems development and management, complemented by advanced 
+                                        skills in project planning, execution, and control. Throughout my studies, 
+                                        I gained experience not only in agile methodologies and managing multidisciplinary 
+                                        teams but also in technical areas such as software development, implementation of 
+                                        technological solutions, database management, and systems analysis. This combination 
+                                        enables me to lead technological projects efficiently, aligning technical and strategic 
+                                        objectives to achieve successful outcomes.</p>
+                                    <div class="conectori">
+                                        <div class="circuloi"></div>
+                                    </div>
+                                </div>
+                                <div class="item izq">
+                                    <h4 id="is">Information Systems</h4>
+                                    <span class="casa" id="eafit2">EAFIT University</span>
+                                    <span class="fecha">01/2024 - 12/2024</span>
+                                    <p id="descrip_is">In this specialization, I acquired advanced knowledge in the strategic management 
+                                        of information technology, leadership of IT teams, and the implementation of technological 
+                                        solutions that drive organizational efficiency. My training includes developing skills for 
+                                        IT strategic planning, managing complex technology projects, and aligning technology with 
+                                        business objectives. This specialization equips me to lead technological initiatives, manage 
+                                        resources, and make key decisions that optimize the performance and impact of technology within 
+                                        organizations.</p>
+                                    <div class="conectori">
+                                        <div class="circuloi"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sección de Experiencia Laboral -->
+                            <div class="col derecha">
+                                <h3 id="work">Work Experience</h3>
+                                <div class="item der">
+                                    <h4 id="fd">Front-end Developer</h4>
+                                    <span class="casa">CodeBulls</span>
+                                    <span class="fecha">02/2023 - 06/2023</span>
+                                    <p id="descrip_fd">As a Front-End Developer, I specialize in managing and configuring 
+                                        WordPress plugins to enhance website functionality, optimizing designs 
+                                        for improved SEO and user experience (UX). I develop E-commerce websites, 
+                                        transforming mockups into engaging, functional interfaces, while also ensuring a 
+                                        seamless multilingual experience through content translation and adaptation in English 
+                                        and Spanish. I design and develop custom websites from scratch using WordPress and Elementor, 
+                                        and implement style improvements with CSS across WordPress and Shopify to enhance both appearance 
+                                        and usability. I also coordinate client meetings to ensure ongoing website optimization and alignment 
+                                        with their goals.</p>
+                                    <div class="conectord">
+                                        <div class="circulod"></div>
+                                    </div>
+                                </div>
+                                <div class="item der">
+                                    <h4 id="ba_d">Back-end Developer / Intern</h4>
+                                    <span class="casa">XM SA ESP</span>
+                                    <span class="fecha">07/2022 - 01/2023</span>
+                                    <p id="descrip_ba_d">During my internship as a Backend Developer, I managed databases with SQLite, 
+                                        ensuring data integrity and accessibility. I led automation projects, developing 
+                                        innovative solutions for data management and project control. I created interactive 
+                                        tables in large databases using SQLAlchemy, optimizing data management and visualization. 
+                                        I developed and implemented a new REST API with FASTAPI, improving flexibility in information 
+                                        handling. Additionally, I implemented connections with external APIs using Python's requests library, 
+                                        successfully achieving the extraction and integration of key data.</p>
+                                    <div class="conectord">
+                                        <div class="circulod"></div>
+                                    </div>
+                                </div>
+                                <div class="item der">
+                                    <h4 id="qa">QA Test Analyst</h4>
+                                    <span class="casa">Geta Club Play</span>
+                                    <span class="fecha">01/2021 - 09/2021</span>
+                                    <p id="descrip_qa">As a QA Test Analyst, I implemented user experience (UX) improvements, 
+                                        optimizing interface design and usability. I collaborated in website development, 
+                                        reporting CSS issues to maintain visual and functional consistency. I identified and 
+                                        documented bugs, proposing changes that significantly enhanced the user experience. 
+                                        I coordinated the creation of detailed reports with information gathered during testing, 
+                                        facilitating bug fixes and improvements. I conducted thorough testing on mobile games, 
+                                        corporate websites, and entertainment applications, ensuring their functionality and performance.</p>
+                                    <div class="conectord">
+                                        <div class="circulod"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="btn">
+
+                            <a id="contact" class="contact" href="mailto:liz.oriana14@gmail.com">
+                               Contact me <img src="img/contact.svg" alt="contact">
+                            </a>
+
+                            <button id="downloadBtn">
+                                Download CV <i class="fa-solid fa-download"></i>
+                                <img src="img/download.png" alt="download">
+                            </button>
+
+
+                        </div>
+
+                        
+
+                    </div>
+                </section>
+
+                <!--SECCIÓN CERTITIFCADOS-->
+                <section id="certification" class="certifications">
+                    <div class="contenido-seccion">
+                        <h2 id="certifications1">CERTIFICATIONS</h2>
+                        <div class="fila">
+                            <div class="col">
+                                <img class="img_sap" src="img/SAP.png" alt="Logo_SAP">
+                                <ul>
+                                    <li><a id="Sourcing" href="https://www.credly.com/badges/3a0d44ec-055b-4339-ae34-c88ad6557a3c" target="_blank" rel="noopener noreferrer">Discovering SAP Ariba Sourcing</a></li>
+                                    <li><a id="Network" href="https://www.credly.com/badges/7d3b5eaa-cfa1-464f-8524-39ee4e92300f" target="_blank" rel="noopener noreferrer">Discovering SAP Business Network</a></li>
+                                    <li><a id="Procurement" href="https://www.credly.com/badges/3b8e4bb1-1e75-4562-8271-2ff1cd8348f8" target="_blank" rel="noopener noreferrer">Discovering SAP Ariba Procurement</a></li>
+                                    <li><a id="Supplier" href="https://www.credly.com/badges/69319c4d-b9f2-4a4d-be34-ab83d3722eb8" target="_blank" rel="noopener noreferrer">Discovering SAP Ariba Supplier Management</a></li>
+                                    <li><a id="Functionality" href="https://www.credly.com/badges/f79efcd2-bbdd-4915-9c1d-b3d6145ba921" target="_blank" rel="noopener noreferrer">Introducing SAP Ariba Procurement Functionality</a></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <img class="img" src="img/Agile.svg" alt="Agile_Icon">
+                                <ul> 
+                                    <li><a href="https://drive.google.com/file/d/1bOO4HToe7xI6DCvEdMzE7MSMPETDo4M6/view?usp=sharing" target="_blank" rel="noopener noreferrer">SCRUM</a></li>
+                                    <li><a id="TPM" href="https://drive.google.com/file/d/1kPHF-RFsC3Emx6EfXtPnNiLOnOypdv58/view?usp=sharing" target="_blank" rel="noopener noreferrer">Technology Project Management</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="fila">
+                            <div class="col">
+                                <img class="img" src="img/Develop.svg" alt="Develop_Icon">
+                                <ul>
+                                    <li><a id="Desing_D" href="https://platzi.com/p/liz.oriana14/curso/1906-diseno-programadores/diploma/detalle/" target="_blank" rel="noopener noreferrer">Design for Develpers</a></li>
+                                    <li><a id="Node" href="https://platzi.com/p/liz.oriana14/curso/1759-fundamentos-node/diploma/detalle/" target="_blank" rel="noopener noreferrer">Node.JS Fundamentals</a></li>
+                                    <li><a id="BWA_PHP" href="https://www.coursera.org/account/accomplishments/verify/2AS53DUP838U" target="_blank" rel="noopener noreferrer">Building Web Applications in PHP</a></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <img class="img" src="img/Design.svg" alt="Design_Icon">
+                                <ul>
+                                    <li><a id="Digital_D" href="https://drive.google.com/file/d/1f-Ekwu9VHz7OT6KL6wziaYSyOPAf3vh4/view?usp=sharing" target="_blank" rel="noopener noreferrer">Digital Design</a></li>
+                                    <li><a id="GS_Figma" href="https://www.coursera.org/account/accomplishments/verify/VN5UA8JP7TJZ" target="_blank" rel="noopener noreferrer">Get Started with Figma</a></li>
+                                    <li><a id="Crevado" href="https://www.coursera.org/account/accomplishments/verify/WMT6FL7XS225" target="_blank" rel="noopener noreferrer">Create your UX portfolio with Crevado</a></li>
+                                    <li><a id="Prototypes_F" href="https://www.coursera.org/account/accomplishments/verify/4AFJF397M5PH" target="_blank" rel="noopener noreferrer">Create high fidelity designs and prototypes in Figma</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <footer>
+                    <a href="#" class="arriba">
+                        <img src="img/Logo_C.png" alt="Logo_C">
+                    </a>
+                    <strong id="social" class="social">Social Networks</strong>
+                    <div class="redes">
+                        <a id="footer-gmail" href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-gmail"><img src="img/gmail.png" alt="Gmail"></i></a>
+                        <a id="footer-linkedin" href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"><img src="img/linkedin.png" alt="Linkedin"></i></a>
+                        <a id="footer-github" href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"><img src="img/github.png" alt="Github"></i></a>
+                    </div>
+                    <p id="powered">© 2024 Proudly powered by Liz Rodrigues</p>
+                </footer>
+
+            <script src="controller/lang.js"></script>
+            <script src="controller/script.js"></script>
 
         </div>
+        
     </body>
 </html>
-
