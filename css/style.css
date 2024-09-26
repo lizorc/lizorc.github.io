@@ -732,6 +732,7 @@ html {
     height: 20px;
     margin-left: 10px;
     margin-bottom: 0;
+    display: inline;
 }
 
 .cv button{
