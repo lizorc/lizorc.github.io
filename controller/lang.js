@@ -50,6 +50,8 @@ const messages = {
         descrip_ba_d:"Durante mi práctica como Desarrolladora Backend, gestioné bases de datos con SQLite, garantizando la integridad y accesibilidad de los datos. Lideré proyectos de automatización, desarrollando soluciones innovadoras para la gestión de datos y el control de proyectos. Creé tablas interactivas en bases de datos grandes utilizando SQLAlchemy, optimizando la gestión y visualización de datos. Desarrollé e implementé una nueva API REST con FASTAPI, mejorando la flexibilidad en el manejo de la información. Además, implementé conexiones con APIs externas utilizando la biblioteca requests de Python, logrando la extracción e integración efectiva de datos clave.",
         qa: "Analista de Pruebas QA",
         descrip_qa: "Como QA Test Analyst, implementé mejoras en la experiencia de usuario (UX), optimizando el diseño de interfaces y la usabilidad. Colaboré en el desarrollo de sitios web, reportando problemas de CSS para mantener la coherencia visual y funcional. Identifiqué y documenté errores, proponiendo cambios que mejoraron significativamente la experiencia del usuario. Coordiné la elaboración de informes detallados con la información obtenida durante las pruebas, facilitando la corrección de errores y mejoras. Realicé pruebas exhaustivas en juegos móviles, sitios web corporativos y aplicaciones de entretenimiento, asegurando su funcionalidad y rendimiento.",
+        contact: "Contáctame",
+        downloadBtn: "Descargar CV",
         certifications1: "CERTIFICACIONES",
         Sourcing: "Descubriendo SAP Ariba Sourcing",
         Network: "Descubriendo SAP Business Network",
@@ -118,6 +120,8 @@ const messages = {
         descrip_ba_d: "During my internship as a Backend Developer, I managed databases with SQLite, ensuring data integrity and accessibility. I led automation projects, developing innovative solutions for data management and project control. I created interactive tables in large databases using SQLAlchemy, optimizing data management and visualization. I developed and implemented a new REST API with FASTAPI, improving flexibility in information handling. Additionally, I implemented connections with external APIs using Python's requests library, successfully achieving the extraction and integration of key data.",
         qa: "QA Test Analyst",
         descrip_qa: "As a QA Test Analyst, I implemented user experience (UX) improvements, optimizing interface design and usability. I collaborated in website development, reporting CSS issues to maintain visual and functional consistency. I identified and documented bugs, proposing changes that significantly enhanced the user experience. I coordinated the creation of detailed reports with information gathered during testing, facilitating bug fixes and improvements. I conducted thorough testing on mobile games, corporate websites, and entertainment applications, ensuring their functionality and performance.",
+        contact: "Contact me",
+        downloadBtn: "Download CV",
         certifications1: "CERTIFICATIONS",
         Sourcing: "Discovering SAP Ariba Sourcing",
         Network: "Discovering SAP Business Network",
@@ -188,6 +192,8 @@ function changeLanguage(lang) {
     document.getElementById('descrip_ba_d').textContent = messages[lang].descrip_ba_d;
     document.getElementById('qa').textContent = messages[lang].qa;
     document.getElementById('descrip_qa').textContent = messages[lang].descrip_qa;
+    document.getElementById('contact').textContent = messages[lang].contact;
+    document.getElementById('downloadBtn').textContent = messages[lang].downloadBtn;
     document.getElementById('certifications1').textContent = messages[lang].certifications1;
     document.getElementById('Sourcing').textContent = messages[lang].Sourcing;
     document.getElementById('Network').textContent = messages[lang].Network;
