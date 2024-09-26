@@ -707,7 +707,8 @@ html {
     border-image-slice: 1;
     border-image-source: linear-gradient(to right, #509ACF, #013A63);
     width: fit-content;
-    display: block;
+    display: flex;
+    align-items: center;
     margin: 20px auto;
     margin-right: 100px;
     padding: 10px 22px;
@@ -732,7 +733,6 @@ html {
     height: 20px;
     margin-left: 10px;
     margin-bottom: 0;
-    display: inline;
 }
 
 .cv button{
